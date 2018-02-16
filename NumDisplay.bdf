@@ -179,6 +179,22 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1312 888 1488 904)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LED3" (rect 90 0 117 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 344 160 480 240)
 	(text "74374b" (rect 48 1 97 17)(font "Arial" (font_size 10)))
@@ -786,6 +802,14 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1040 632)
 	(pt 1056 632)
+)
+(connector
+	(pt 1240 816)
+	(pt 1312 816)
+)
+(connector
+	(pt 1312 816)
+	(pt 1312 896)
 )
 (junction (pt 248 200))
 (junction (pt 304 304))

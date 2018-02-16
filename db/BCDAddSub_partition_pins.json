@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[0]",
 					"strict" : false
 				},
@@ -172,6 +176,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW9",
+					"strict" : false
+				},
+				{
 					"name" : "SW0",
 					"strict" : false
 				},
@@ -209,10 +217,6 @@
 				},
 				{
 					"name" : "KEY0",
-					"strict" : false
-				},
-				{
-					"name" : "SW9",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BCDAddSub
-Thu Feb 15 08:11:43 2018
+Thu Feb 15 17:35:09 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,14 +42,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 15 08:11:43 2018       ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 15 17:35:09 2018       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; BCDAddSub                                   ;
 ; Top-level Entity Name           ; NumDisplay                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 16                                          ;
-; Total pins                      ; 53                                          ;
+; Total pins                      ; 54                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -172,8 +172,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
 ; BCDAddSub.vhd                    ; yes             ; User VHDL File                     ; C:/Users/anjam_000/Documents/ArithmeticLab/BCDAddSub.vhd            ;         ;
 ; NumDisplay.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/anjam_000/Documents/ArithmeticLab/NumDisplay.bdf           ;         ;
-; bcdto7seg.vhd                    ; yes             ; Auto-Found VHDL File               ; C:/Users/anjam_000/Documents/ArithmeticLab/bcdto7seg.vhd            ;         ;
 ; 74374b.bdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.1/quartus/libraries/others/maxplus2/74374b.bdf ;         ;
+; bcdto7seg.vhd                    ; yes             ; Auto-Found VHDL File               ; C:/Users/anjam_000/Documents/ArithmeticLab/bcdto7seg.vhd            ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
 
 
@@ -184,22 +184,22 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------+
 ; Estimate of Logic utilization (ALMs needed) ; 36              ;
 ;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 65              ;
+; Combinational ALUT usage for logic          ; 66              ;
 ;     -- 7 input functions                    ; 0               ;
 ;     -- 6 input functions                    ; 0               ;
 ;     -- 5 input functions                    ; 2               ;
-;     -- 4 input functions                    ; 55              ;
+;     -- 4 input functions                    ; 56              ;
 ;     -- <=3 input functions                  ; 8               ;
 ;                                             ;                 ;
 ; Dedicated logic registers                   ; 16              ;
 ;                                             ;                 ;
-; I/O pins                                    ; 53              ;
+; I/O pins                                    ; 54              ;
 ;                                             ;                 ;
 ; Total DSP Blocks                            ; 0               ;
 ;                                             ;                 ;
 ; Maximum fan-out node                        ; 74374b:inst5|16 ;
 ; Maximum fan-out                             ; 12              ;
-; Total fan-out                               ; 382             ;
+; Total fan-out                               ; 388             ;
 ; Average fan-out                             ; 2.04            ;
 +---------------------------------------------+-----------------+
 
@@ -209,7 +209,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
-; |NumDisplay                ; 65 (0)              ; 16 (0)                    ; 0                 ; 0          ; 53   ; 0            ; |NumDisplay                 ; NumDisplay  ; work         ;
+; |NumDisplay                ; 66 (0)              ; 16 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |NumDisplay                 ; NumDisplay  ; work         ;
 ;    |74374b:inst5|          ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|74374b:inst5    ; 74374b      ; work         ;
 ;    |74374b:inst|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|74374b:inst     ; 74374b      ; work         ;
 ;    |BCDto7Seg:a|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|BCDto7Seg:a     ; BCDto7Seg   ; work         ;
@@ -219,7 +219,7 @@ refer to the applicable agreement for further details.
 ;    |BCDto7Seg:inst3|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|BCDto7Seg:inst3 ; BCDto7Seg   ; work         ;
 ;    |BCDto7Seg:inst6|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|BCDto7Seg:inst6 ; BCDto7Seg   ; work         ;
 ;    |bcdaddsub:aa|          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|bcdaddsub:aa    ; bcdaddsub   ; work         ;
-;    |bcdaddsub:bb|          ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|bcdaddsub:bb    ; bcdaddsub   ; work         ;
+;    |bcdaddsub:bb|          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NumDisplay|bcdaddsub:bb    ; bcdaddsub   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -246,22 +246,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 16                          ;
 ;     plain             ; 16                          ;
-; arriav_lcell_comb     ; 71                          ;
+; arriav_lcell_comb     ; 72                          ;
 ;     arith             ; 12                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 6                           ;
 ;         5 data inputs ; 2                           ;
-;     normal            ; 59                          ;
+;     normal            ; 60                          ;
 ;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 3                           ;
-;         4 data inputs ; 49                          ;
-; boundary_port         ; 53                          ;
+;         4 data inputs ; 50                          ;
+; boundary_port         ; 54                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.70                        ;
-; Average LUT depth     ; 4.32                        ;
+; Average LUT depth     ; 4.33                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Feb 15 08:11:24 2018
+    Info: Processing started: Thu Feb 15 17:34:48 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BCDAddSub -c BCDAddSub
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -296,13 +296,13 @@ Warning (275080): Converted elements in bus name "SW" using legacy naming rules.
     Warning (275081): Converted element name(s) from "SW[9]" to "SW9"
 Warning (275002): No superset bus at connection
 Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "bcdaddsub" for hierarchy "bcdaddsub:bb"
+Info (12128): Elaborating entity "74374b" for hierarchy "74374b:inst"
+Info (12130): Elaborated megafunction instantiation "74374b:inst"
 Warning (12125): Using design file bcdto7seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: BCDto7Seg-a File: C:/Users/anjam_000/Documents/ArithmeticLab/bcdto7seg.vhd Line: 14
     Info (12023): Found entity 1: BCDto7Seg File: C:/Users/anjam_000/Documents/ArithmeticLab/bcdto7seg.vhd Line: 4
 Info (12128): Elaborating entity "BCDto7Seg" for hierarchy "BCDto7Seg:inst3"
-Info (12128): Elaborating entity "74374b" for hierarchy "74374b:inst"
-Info (12130): Elaborated megafunction instantiation "74374b:inst"
-Info (12128): Elaborating entity "bcdaddsub" for hierarchy "bcdaddsub:aa"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "74374b:inst5|49" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "74374b:inst5|48" feeding internal logic into a wire
@@ -323,14 +323,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 136 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 81 logic cells
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 82 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 738 megabytes
-    Info: Processing ended: Thu Feb 15 08:11:43 2018
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Processing ended: Thu Feb 15 17:35:09 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:46
 
 
